@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <%block head%>
+
+    <%/block%>
+</head>
+<body>
+    <%block body%>
+        <div>header</div>
+        <%if (count > 0) {%>
+            <div>body: count: <%= count %></div>
+        <%}%>
+        <div>request: <%- request.session.count %></div>
+    <%/block%>
+</body>
+</html>

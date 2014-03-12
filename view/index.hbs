@@ -1,0 +1,13 @@
+{{#extend "layout/main"}}
+    {{#content "head" mode="append"}}
+        <link rel="stylesheet" href="assets/css/home.css" />
+    {{/content}}
+
+    {{#content "body" mode="replace"}}
+        <h2>Welcome Home</h2>
+    {{/content}}
+
+    {{#content "foot" mode="prepend"}}
+        <div>prepend foot</div>
+    {{/content}}
+{{/extend}}
